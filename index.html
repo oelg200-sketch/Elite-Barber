@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💈</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Barber | Tu Barbería de Confianza</title>
+  <meta name="description" content="Elite Barber — cortes clásicos y modernos, diseño de barba, estilo y precisión. Reserva tu cita online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">💈</span>
+        <span class="logo-text">
+          <span class="logo-name">ELITE</span>
+          <span class="logo-sub">BARBER</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#barberos">Barberos</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#reserva" class="btn-nav-book">Reservar Cita</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.pexels.com/photos/7195803/pexels-photo-7195803.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920" alt="Interior de barbería Elite Barber" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-scissors" id="heroScissors"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <span class="hero-badge-line"></span>
+        <span>ESTILO • PRECISIÓN • TRADICIÓN</span>
+        <span class="hero-badge-line"></span>
+      </div>
+
+      <h1 class="hero-title reveal" style="--delay: 0.1s">
+        DONDE EL
+        <span class="hero-accent">ESTILO</span>
+        NACE
+      </h1>
+
+      <p class="hero-subtitle reveal" style="--delay: 0.2s">
+        Cortes clásicos y modernos, diseño de barba, tratamientos faciales y mucho más.
+        Tu mejor versión empieza aquí. Reserva tu cita hoy.
+      </p>
+
+      <div class="hero-cta reveal" style="--delay: 0.3s">
+        <a href="#reserva" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Reservar Cita
+        </a>
+        <a href="#servicios" class="btn-outline">Ver Servicios</a>
+      </div>
+
+      <div class="hero-stats reveal" style="--delay: 0.4s">
+        <div class="stat-item">
+          <p class="stat-num" data-target="5000">0</p>
+          <p class="stat-label">Cortes Realizados</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <p class="stat-num" data-target="8">0</p>
+          <p class="stat-label">Años de Experiencia</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <p class="stat-num" data-target="4" data-suffix=".9★">0</p>
+          <p class="stat-label">Calificación</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C240,100 480,20 720,50 C960,80 1200,110 1440,60 L1440,120 L0,120 Z" fill="#0a0a0a">
+          <animate attributeName="d" dur="8s" repeatCount="indefinite"
+            values="M0,60 C240,100 480,20 720,50 C960,80 1200,110 1440,60 L1440,120 L0,120 Z;M0,70 C240,30 480,100 720,60 C960,20 1200,50 1440,80 L1440,120 L0,120 Z;M0,60 C240,100 480,20 720,50 C960,80 1200,110 1440,60 L1440,120 L0,120 Z" />
+        </path>
+        <path d="M0,80 C240,40 480,110 720,70 C960,30 1200,60 1440,90 L1440,120 L0,120 Z" fill="#111" fill-opacity="0.6">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite"
+            values="M0,80 C240,40 480,110 720,70 C960,30 1200,60 1440,90 L1440,120 L0,120 Z;M0,90 C240,60 480,30 720,80 C960,110 1200,40 1440,70 L1440,120 L0,120 Z;M0,80 C240,40 480,110 720,70 C960,30 1200,60 1440,90 L1440,120 L0,120 Z" />
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES CAROUSEL ============ -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">NUESTROS SERVICIOS</span>
+        <h2 class="section-title">Servicios <span class="text-gold">Premium</span></h2>
+        <p class="section-desc">Desliza para ver todos nuestros servicios. Toca una tarjeta para conocer los detalles.</p>
+      </div>
+
+      <!-- Carousel -->
+      <div class="carousel" id="servicesCarousel">
+        <button class="carousel-btn carousel-prev" id="servicesPrev" aria-label="Anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="carousel-track" id="servicesTrack"></div>
+
+        <button class="carousel-btn carousel-next" id="servicesNext" aria-label="Siguiente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <!-- Carousel dots -->
+      <div class="carousel-dots" id="servicesDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ BARBERS / TEAM ============ -->
+  <section id="barberos" class="barbers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">NUESTRO EQUIPO</span>
+        <h2 class="section-title">Nuestros <span class="text-gold">Barberos</span></h2>
+        <p class="section-desc">Toca cada tarjeta para conocer la especialidad y experiencia de cada barbero.</p>
+      </div>
+
+      <div class="barbers-grid" id="barbersGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="galeria" class="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">NUESTRO TRABAJO</span>
+        <h2 class="section-title">Galería de <span class="text-gold">Cortes</span></h2>
+        <p class="section-desc">Algunos de nuestros mejores trabajos. Desliza para ver más.</p>
+      </div>
+
+      <!-- Gallery carousel -->
+      <div class="carousel gallery-carousel" id="galleryCarousel">
+        <button class="carousel-btn carousel-prev" id="galleryPrev" aria-label="Anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="carousel-track" id="galleryTrack"></div>
+
+        <button class="carousel-btn carousel-next" id="galleryNext" aria-label="Siguiente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="carousel-dots" id="galleryDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section id="productos" class="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TIENDA</span>
+        <h2 class="section-title">Productos de <span class="text-gold">Cuidado</span></h2>
+        <p class="section-desc">Lleva la experiencia Elite a casa. Productos profesionales para el cuidado de tu cabello y barba.</p>
+      </div>
+
+      <!-- Product filters -->
+      <div class="product-filters" id="productFilters">
+        <button class="product-filter-btn active" data-filter="all">Todos</button>
+        <button class="product-filter-btn" data-filter="cabello">Cabello</button>
+        <button class="product-filter-btn" data-filter="barba">Barba</button>
+        <button class="product-filter-btn" data-filter="accesorios">Accesorios</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ MODAL (for service & barber details) ============ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="opiniones" class="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TESTIMONIOS</span>
+        <h2 class="section-title">Lo que dicen <span class="text-gold">nuestros clientes</span></h2>
+        <p class="section-desc">La satisfacción de nuestros clientes es nuestra mejor carta de presentación.</p>
+      </div>
+
+      <div class="reviews-carousel" id="reviewsCarousel">
+        <button class="carousel-btn carousel-prev" id="reviewsPrev" aria-label="Anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="reviews-viewport" id="reviewsViewport"></div>
+
+        <button class="carousel-btn carousel-next" id="reviewsNext" aria-label="Siguiente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="carousel-dots" id="reviewsDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section id="reserva" class="booking">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">RESERVA</span>
+        <h2 class="section-title">Reserva tu <span class="text-gold">Cita</span></h2>
+        <p class="section-desc">Completa el formulario y te confirmaremos tu cita en minutos.</p>
+      </div>
+
+      <div class="booking-wrap">
+        <form id="bookingForm" class="booking-form">
+          <!-- Step indicator -->
+          <div class="booking-steps">
+            <div class="step-indicator active" data-step="1">
+              <span class="step-circle">1</span>
+              <span class="step-label">Servicio</span>
+            </div>
+            <div class="step-line" id="stepLine1"></div>
+            <div class="step-indicator" data-step="2">
+              <span class="step-circle">2</span>
+              <span class="step-label">Barbero</span>
+            </div>
+            <div class="step-line" id="stepLine2"></div>
+            <div class="step-indicator" data-step="3">
+              <span class="step-circle">3</span>
+              <span class="step-label">Fecha y Datos</span>
+            </div>
+          </div>
+
+          <!-- Step 1: Service -->
+          <div class="booking-step active" id="step1">
+            <h3 class="step-title">¿Qué servicio deseas?</h3>
+            <div class="booking-options" id="serviceOptions"></div>
+            <div class="step-nav">
+              <button type="button" class="btn-step-next" id="toStep2" disabled>Continuar →</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Barber -->
+          <div class="booking-step" id="step2">
+            <h3 class="step-title">Elige tu barbero</h3>
+            <div class="booking-options" id="barberOptions"></div>
+            <div class="step-nav">
+              <button type="button" class="btn-step-back" id="backTo1">← Atrás</button>
+              <button type="button" class="btn-step-next" id="toStep3" disabled>Continuar →</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Date & details -->
+          <div class="booking-step" id="step3">
+            <h3 class="step-title">Fecha, hora y tus datos</h3>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="bookDate">Fecha</label>
+                <input type="date" id="bookDate" name="bookDate" required />
+              </div>
+              <div class="form-field">
+                <label for="bookTime">Hora</label>
+                <select id="bookTime" name="bookTime" required>
+                  <option value="">Selecciona</option>
+                  <option value="09:00">9:00 AM</option>
+                  <option value="09:30">9:30 AM</option>
+                  <option value="10:00">10:00 AM</option>
+                  <option value="10:30">10:30 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="11:30">11:30 AM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="14:30">2:30 PM</option>
+                  <option value="15:00">3:00 PM</option>
+                  <option value="15:30">3:30 PM</option>
+                  <option value="16:00">4:00 PM</option>
+                  <option value="16:30">4:30 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="bookName">Nombre completo</label>
+                <input type="text" id="bookName" name="bookName" required placeholder="Tu nombre" />
+              </div>
+              <div class="form-field">
+                <label for="bookPhone">Teléfono</label>
+                <input type="tel" id="bookPhone" name="bookPhone" required placeholder="+503 0000-0000" />
+              </div>
+            </div>
+
+            <!-- Booking summary -->
+            <div class="booking-summary" id="bookingSummary"></div>
+
+            <div class="step-nav">
+              <button type="button" class="btn-step-back" id="backTo2">← Atrás</button>
+              <button type="submit" class="btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Confirmar Cita
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Success message -->
+        <div class="booking-success" id="bookingSuccess">
+          <div class="booking-success-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>¡Cita Reservada!</h3>
+          <p id="successMsg"></p>
+          <button class="btn-outline" id="newBooking">Hacer otra reserva</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION ============ -->
+  <section id="ubicacion" class="location">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">VISÍTANOS</span>
+        <h2 class="section-title">Nuestra <span class="text-gold">Ubicación</span></h2>
+        <p class="section-desc">Estamos en el corazón de la ciudad. ¡Te esperamos!</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-map">
+          <iframe
+            title="Ubicación de Elite Barber"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-89.22%2C13.69%2C-89.18%2C13.71&layer=mapnik&marker=13.70%2C-89.20"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="location-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3>Dirección</h3>
+              <p>Av. Principal #123, San Salvador</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3>Horarios</h3>
+              <p>Lun-Sáb: 9:00 AM - 7:00 PM<br />Domingo: Cerrado</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h3>Teléfono</h3>
+              <p>+503 7777-4400</p>
+            </div>
+          </div>
+
+          <a href="#" class="btn-whatsapp" id="whatsappBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.549 4.142 1.595 5.945L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.006c6.585 0 11.946-5.36 11.948-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Contactar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">💈</span>
+          <span class="logo-text">
+            <span class="logo-name">ELITE</span>
+            <span class="logo-sub">BARBER</span>
+          </span>
+        </div>
+        <p class="footer-desc">Tu barbería de confianza. Estilo, precisión y tradición en cada corte. Reserva tu cita y vive la experiencia Elite.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.549 4.142 1.595 5.945L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.006c6.585 0 11.946-5.36 11.948-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Servicios</h3>
+        <ul id="footerServices"></ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#barberos">Barberos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#reserva">Reservar Cita</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <ul class="footer-contact">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Av. Principal #123, San Salvador</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+503 7777-4400</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Lun-Sáb: 9AM - 7PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Elite Barber. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script defer src="src/script.js"></script>
+</body>
+</html>
